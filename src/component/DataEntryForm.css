@@ -1,0 +1,129 @@
+/* DataEntryForm.css */
+
+.data-entry-form-container {
+    max-width: 848px; /* Match the width of your design */
+    margin: 40px auto; /* Center the form in the middle of the page with margin from top and bottom */
+    padding: 40px; /* Padding inside the container */
+    background-color: #fff; /* White background for the form */
+    border: 5px solid green; /* Rounded corners for the form container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+    font-family: Arial, sans-serif; /* Font family for the form */
+}
+
+.data-entry-form-container h1 {
+    font-size: 24px; /* Size of the form header */
+    color: #333; /* Color of the form header text */
+    text-align: center; /* Center align the header text */
+    margin-bottom: 20px; /* Space between the header and the form */
+}
+
+.data-entry-form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-gap: 20px; /* Space between grid items */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack the label and input vertically */
+}
+
+.form-group label {
+    display: block;
+    text-align: center;
+    font-size: 16px; /* Size of the input labels */
+    margin-bottom: 5px; /* Space between label and input field */
+    color: #333; /* Color of the label text */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group input[type="checkbox"] {
+    padding: 10px; /* Padding inside the input and select fields */
+    border: 1px solid #ccc; /* Border around the input and select fields */
+    border-radius: 4px; /* Rounded corners for the input and select fields */
+    font-size: 16px; /* Text size inside the input and select fields */
+}
+
+/* Full-width items */
+.form-group.full-width {
+    grid-column: 1 / -1; /* Spans full width */
+}
+
+/* Email and Name side by side using the form-row for their container */
+.form-row.half-width {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for the row */
+    grid-gap: 20px;
+}
+
+.fourth-row-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    grid-gap: 10px;
+}
+
+.form-group.fourth-row {
+    margin-right: 0; /* No margin for the last item */
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align to the left */
+    margin-top: 3px; /* Space from the previous element */
+}
+
+.checkbox-group label {
+    margin-left: 5px; /* Space between checkbox and label text */
+}
+
+.form-button {
+    display: flex; /* Use flexbox to center the button */
+    justify-content: center; /* Horizontally center the button */
+    margin-top: 2px; /* Space from the previous element, adjust as needed */
+    margin-left: 0;
+}
+
+.data-entry-form button {
+    display: block;
+    width: 20%;
+    padding: 15px 0;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Text size for the button */
+    text-transform: uppercase; /* Uppercase text for the button */
+    margin-top: 20px; /* Space from the previous element */
+}
+
+/* Add any hover effects */
+.data-entry-form button:hover {
+    background-color: #45a049;
+}
+
+.data-entry-form button:disabled {
+    background-color: #ccc; /* A grey color to indicate that the button is disabled */
+    cursor: not-allowed; /* Cursor to indicate the button is not clickable */
+}
+
+.submitted-info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid green;
+    color: green; /* Adjust the color to match your green color scheme */
+    font-family: Arial, sans-serif;
+}
+
+.submitted-info h2 {
+    text-align: center;
+}
+
+.submitted-info p {
+    font-size: 18px; /* Adjust the size as needed */
+    margin: 5px 0; /* Adjust spacing between lines as needed */
+}
+
